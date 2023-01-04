@@ -2,10 +2,11 @@ import React from 'react';
 //import logo from './logo.svg';
 import './App.scss';
 import Login from "./LoginPage/login";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,Outlet } from "react-router-dom";
 import Dashboard from './Dashboard/dashboard';
 import Users from './Users/users';
 import Guarantors from './Guarantors/guarantors';
+import UserDetails from './UserDetails/userDetails';
 
 
 function App() {
@@ -21,9 +22,15 @@ function App() {
      
           
         >
-          <Route path="users"  element={<Users />}/>
+          <Route path="users"  element={<Users />}/> 
+          
           <Route path="guarantors"  element={<Guarantors />}/>
+          <Route path="userDetails"  element={<UserDetails />}/>
+         
+        
+          
         </Route>
+        
         {/* <Route path="/users" element={<Users/> }  /> 
             <Route path="/loan" element={<Loan/> } />  */}
        

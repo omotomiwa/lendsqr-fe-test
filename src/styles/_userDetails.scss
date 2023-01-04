@@ -1,0 +1,121 @@
+.container{
+    padding-top: 65px;
+    padding-left: 139px !important;
+    padding-right: 60px;
+    
+}
+.back-btn{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 5px;
+    background: transparent;
+    border: none;
+}
+.back{
+    text-decoration: none;
+    color: $text-primary;
+    font-weight: 400;
+    font-size : 16px;
+    position: relative;
+    bottom: 3px;
+}
+.user-details-header-container{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 400px;
+    justify-content: space-between;
+   
+   
+}
+.user-details-header-text{
+    color: $text-primary;
+    font-size: 24px;
+    font-size: 500;
+    line-height: 28px;
+
+}
+.action-btns{
+    display: flex;
+    grid-gap: 15px;
+    flex-direction: row;
+}
+.blacklist-user{
+    font-weight: 600;
+    font-size:14px;
+    line-height: 16px;
+    color: $color-danger;
+    height: 40px;
+    width: 170px;
+    border-radius: 8px;
+    border: 1px solid $color-danger;
+    background: transparent;
+}
+.active-user{
+    font-weight: 600;
+    font-size:14px;
+    line-height: 16px;
+    height: 40px;
+    width: 170px;
+    border-radius: 8px;
+    color: $btn-primary;
+    border: 1px solid $btn-primary;
+    background: transparent;
+
+}
+.user-details-tab-container{
+    background: #FFFFFF;
+    padding-left:30px;
+    padding-top: 62px;
+
+}
+.user-details-sub-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+.profile-container{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 20px;
+}
+.name-container{
+    padding-top: 20px;
+}
+.fullname{
+    color: $text-primary;
+    font-weight: 500;
+    font-size:22px;
+    line-height:25px;
+}
+.code{
+    color: #545F7D !important;
+    font-size:14px !important;
+    font-weight: 500 !important;
+    line-height: 14px !important;
+}
+.ratings-container{
+    padding-top: 20px;
+
+
+}
+.ratings{
+    font-size: 14px;
+    font-weight: 500;
+    line-height:16px;
+    color: $text-primary;
+}
+.amount-container{
+    padding-top: 15px;
+}
+.amount{
+    color: $text-primary;
+    font-size:22px;
+    font-weight: 500;
+
+}
+.bank-details{
+    color: $text-primary;
+    font-size:12px;
+    font-weight: 400;
+}

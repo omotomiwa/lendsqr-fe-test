@@ -1,5 +1,5 @@
 import React ,{ useEffect, useState } from "react";
-import {Routes , Route } from "react-router-dom";
+import {Routes , Route, Link,Outlet } from "react-router-dom";
 import { Radio, Space, Table, Tag,DatePicker,MenuProps,Dropdown, Select  } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import axios from "axios";
@@ -201,6 +201,7 @@ interface DataType {
       ),
       dataIndex: "orgName",
       key: "orgName",
+     
     },
     {
       title: (
@@ -220,6 +221,7 @@ interface DataType {
       ),
       dataIndex: "userName",
       key: "userName",
+      
     },
     {
       title: (
@@ -237,6 +239,7 @@ interface DataType {
       ),
       dataIndex: "email",
       key: "email",
+      
     },
     {
       title: (
@@ -254,6 +257,7 @@ interface DataType {
       ),
       dataIndex: "phoneNumber",
       key: "phoneNumber",
+    
     },
     {
       title: (
@@ -271,6 +275,7 @@ interface DataType {
       ),
       dataIndex: "createdAt",
       key: "createdAt",
+     
     },
     {
         title: (
@@ -288,6 +293,7 @@ interface DataType {
         ),
         dataIndex: "status",
         key: "status",
+        
       },
     // {
     //   title: (
@@ -324,9 +330,14 @@ interface DataType {
     {
       title: "",
       key: "action",
+     
       render: (_, record) => (
         <Space size="middle">
-          <img className="icon" src="/icons/more.svg" width="20" height="20" />
+            <Link to="userDetails" className="links">
+            <img className="icon" src="/icons/more.svg" width="20" height="20" />
+
+            </Link>
+          
         </Space>
       ),
     },
@@ -383,6 +394,7 @@ function Users() {
    
     return (
       <div>
+         <Outlet/>
       <div className="users-container">
         <h3 className="users-text">Users</h3>
         <div className="users-card-container">
@@ -475,11 +487,13 @@ function Users() {
         </div>
         </div>
         </div>
-        <Table columns={columns}  dataSource={data}   loading={loading} rowKey={(record) => record.key} scroll={{ x: 0 }}/>
+        <Table columns={columns}  dataSource={data}   loading={loading} rowKey={(record) => record.key} scroll={{ x: 50 }}/>
       </div>
 
   
-          
+      
+        
+      
       </div>
     )
   }

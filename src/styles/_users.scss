@@ -1,6 +1,6 @@
 .users-container{
     padding-top: 60px;
-    padding-left: 115px;
+    padding-left: 85px;
     padding-right: 60px;
     background:  #E5E5E5;
 }
@@ -119,3 +119,4 @@
     }
 
 }
+.ant-table .ant-table-header.ant-table-hide-scrollbar::-webkit-scrollbar { width: 5px !important; }
