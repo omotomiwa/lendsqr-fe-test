@@ -1,0 +1,102 @@
+.left{
+    display: flex;
+    flex-direction: row;
+
+}
+.side-nav-container{
+    width: 20vw;
+   
+    padding-top: 39px;
+
+    background-color: #FFFFFF;
+    
+}
+.side-nav-links{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+    padding-left: 30px;
+   
+}
+
+.sidenav-text{
+    color: $sidenav-text !important;
+    font-weight: 400 !important;
+    font-size: 16px;
+
+}
+.dashboard-nav{
+    padding-top: 52px;
+    padding-bottom: 41px;
+}
+.customers-container{
+    padding-left: 30px;
+}
+.customers{
+    color: $sidenav-text;
+    font-size: 12px;
+    font-weight: 500;
+}
+.sub-side-nav-links{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+    padding-left: 30px;;
+
+}
+.sub-sidenav-text{
+    color: $sidenav-text !important;
+    font-weight: 400 !important;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.x{
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+
+}
+.sidenav-link > div{
+    :active,
+    &:hover
+    
+     {
+        
+        background: #e1f7f7;
+        border-left: 3px solid #39CDCC;
+        cursor: pointer;
+       
+       
+        .sub-sidenav-text{
+            color: $text-primary;
+            font-weight: 700;
+            
+        }
+    }
+
+
+}
+.nav-heading{
+    padding-left: 30px;
+    padding-top: 20px;
+
+}
+.business {
+    color: $sidenav-text;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+.settings{
+    color: $sidenav-text;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+    
+.links{
+    text-decoration: none;
+}

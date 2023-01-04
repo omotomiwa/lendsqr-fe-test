@@ -1,0 +1,121 @@
+.users-container{
+    padding-top: 60px;
+    padding-left: 115px;
+    padding-right: 60px;
+    background:  #E5E5E5;
+}
+.users-text{
+    color: $text-primary;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+.users-card-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.all-users-container,
+.active-users-container,
+.loan-users-container,
+.savings-users-container{
+    background: #FFFFFF;
+    width: 204px;
+    height: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.card-content-container{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.img-container{
+    padding-bottom: 20px;
+}
+.card-text{
+    padding-bottom: 7px;
+    color: #545F7D;
+    font-size: 14px;
+    font-weight: 500;
+}
+.total{
+    font-weight: 600;
+    font-size: 24px;
+    color: #213F7D;
+    line-height: 28px;
+}
+.table-header-container{
+    display: flex;
+    flex-direction: row;
+    grid-gap:1px;
+}
+.ant-table-thead >tr>th{
+    background: none !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    color: #545F7D !important;
+    
+
+}
+
+.ant-table-tbody>tr>td{
+    color: #545F7D !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+.sort-icon{
+    margin-bottom: 5px;
+}
+.sort-header-container{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.sort-header-text{
+    font-weight: 14px;
+    font-weight: 500;
+    line-height: 16px;
+
+}
+.btn-container{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 14px;
+}
+.btn-reset{
+    width:98px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #545F7D;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    &:hover{
+        background:#545F7D ;
+        color: #FFFFFF;
+    }
+    
+}
+.btn-filter{
+    width:98px;
+    height: 40px;
+    background: $btn-primary;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    color: #FFFFFF;
+    &:hover{
+        background:transparent ;
+        color: #545F7D;
+        border: 1px solid $btn-primary;
+    }
+
+}

@@ -25,7 +25,7 @@ function Navbar() {
             </div>
             <div className="nav-item-right">
                 <a className="document">Docs</a>
-                <img src="/icons/notify.svg" width="25" height="25" />
+                <img src="/icons/notify.svg" className="notify"width="25" height="25" />
                 
                 <div className="profile">
                 <img  className="avatar" src="/icons/profile-image.svg" width="32" height="32" />
