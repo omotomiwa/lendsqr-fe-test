@@ -336,7 +336,7 @@ interface DataType {
             <Link to="userDetails" className="links">
             <img className="icon" src="/icons/more.svg" width="20" height="20" />
 
-            </Link>
+            </Link>  
           
         </Space>
       ),
