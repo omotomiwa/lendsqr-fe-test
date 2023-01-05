@@ -25,6 +25,7 @@
     flex-direction: row;
     grid-gap: 400px;
     justify-content: space-between;
+    padding-bottom: 40px;
    
    
 }
@@ -66,7 +67,10 @@
 .user-details-tab-container{
     background: #FFFFFF;
     padding-left:30px;
-    padding-top: 62px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .user-details-sub-container{
@@ -95,7 +99,7 @@
     line-height: 14px !important;
 }
 .ratings-container{
-    padding-top: 20px;
+    padding-top: 25px;
 
 
 }
@@ -118,4 +122,55 @@
     color: $text-primary;
     font-size:12px;
     font-weight: 400;
+}
+.user-tabs{
+    position: relative;
+    bottom: 47px;
+    padding-left: 40px;
+    
+}
+.ant-tabs-tab-btn{
+   
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 35px;
+
+}
+
+.ant-tabs-ink-bar {
+    height: 5px;
+    background:  $btn-primary !important;
+  }
+.info-header{
+    color: $text-primary;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+
+}
+.personal-info-container{
+    padding-top: 15px;
+
+}
+.details-container{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 70px;
+    
+}
+.head{
+    padding-bottom: 20px;
+}
+.sub-head{
+    font-weight: 400;
+    font-size: 14px;
+    color: $text-primary;
+    line-height: 10px;
+
+}
+.sub-head-details{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 3px;
+    color: $text-primary;
 }

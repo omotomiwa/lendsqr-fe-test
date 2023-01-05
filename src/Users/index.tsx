@@ -1,6 +1,6 @@
 import React ,{ useEffect, useState } from "react";
 import {Routes , Route, Link,Outlet } from "react-router-dom";
-import { Radio, Space, Table, Tag,DatePicker,MenuProps,Dropdown, Select  } from 'antd';
+import { Radio, Space, Table, Tag,DatePicker,MenuProps,Dropdown, Select, Button  } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import axios from "axios";
 
@@ -150,6 +150,7 @@ interface DataType {
     
   ];
   
+  
   const datas: DataType[] = [
     {
       key: '1',
@@ -179,6 +180,8 @@ interface DataType {
       status: 'pending',
     },
   ];
+  
+  
   const columns: ColumnsType<DataType> = [
     {
       title: (
@@ -295,48 +298,74 @@ interface DataType {
         key: "status",
         
       },
-    // {
-    //   title: (
-    //     <div className="table-header-container">
-    //       <span>STATUS</span>{" "}
-    //       <div className="header-icon-container">
-    //         <img
-    //           className="icon sort-icon"
-    //           src="/icons/sort.svg"
-    //           width="16"
-    //           height="10"
-    //         />
-    //       </div>{" "}
-    //     </div>
-    //   ),
-    //   key: "status",
-    //   dataIndex: "phoneNumber",
-    //   render: (status: string[]) => (
-    //     <span>
-    //       {status.map((tag) => {
-    //         let color = tag.length > 5 ? "geekblue" : "green";
-    //         if (tag === "loser") {
-    //           color = "volcano";
-    //         }
-    //         return (
-    //           <Tag color={color} key={tag}>
-    //             {tag}
-    //           </Tag>
-    //         );
-    //       })}
-    //     </span>
-    //   ),
-    // },
+    
     {
       title: "",
       key: "action",
      
       render: (_, record) => (
         <Space size="middle">
-            <Link to="userDetails" className="links">
+            <div className="dropdown">
             <img className="icon" src="/icons/more.svg" width="20" height="20" />
+  <div className="dropdown-content">
+          <Link className="icon-link" to="userDetails">
+          <div className="sub-side-nav-links   ">
+         
+            <img
+              className="icon"
+              src="/icons/eye.svg"
+              width="15"
+              height="15"
+            />
+            <a
+              className="sub-sidenav-text "
+              href="#"
+              
+            >
+              View Details
+            </a>
+          </div>
+          </Link>
+  
+          <div className="sub-side-nav-links   ">
+            <img
+              className="icon"
+              src="/icons/black-list.svg"
+              width="15"
+              height="15"
+            />
+            <a
+              className="sub-sidenav-text "
+              href="#"
+              
+            >
+              Blacklist User
+            </a>
+          </div>
+          <div className="sub-side-nav-links   ">
+            <img
+              className="icon"
+              src="/icons/activate.svg"
+              width="15"
+              height="15"
+            />
+            <a
+              className="sub-sidenav-text "
+              href="#"
+              
+            >
+              Activate User
+            </a>
+          </div>
+  </div>
+</div>
+        
+        
+       
 
-            </Link>  
+            
+
+           
           
         </Space>
       ),
@@ -362,29 +391,15 @@ function Users() {
           });
       };
 
-    // const fetchData = async () =>{
-    //     setLoading(true);
-    //     try{
-    //         const response = await axios.get("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users");
-    //         return  setData(response.data) 
-    //     } catch(error){
-    //         console.log(error)
-    //     }
-      
-    // }
+    
 
     useEffect(() =>{
-        // fetch("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
-        // .then(res => res.json())
-        // .then(result => {
-        //  //console.log (result)
-        //  setData(result)
-        // })
+       
         fetchData();
       
 
     }, []);
-   // console.log(datalog);
+ 
 
    
     

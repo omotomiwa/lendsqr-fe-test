@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Route,Routes,Outlet } from 'react-router-dom'; 
-import Users from "../Users/users"; 
+import Users from "../Users"; 
 function SideNav() {
   return (
     <div>

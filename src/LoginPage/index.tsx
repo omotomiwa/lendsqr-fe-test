@@ -2,7 +2,7 @@ import React from "react";
 //import logo from './logo.svg';
 import { useState } from "react";
 import {useNavigate} from "react-router";
-import Dashboard from "../Dashboard/dashboard";
+import Dashboard from "../Dashboard";
 function Login() {
 
     const [shown, setShown] = useState(false);
@@ -44,7 +44,7 @@ function Login() {
   return (
     <div className="  wrapper">
       <div className="row gx-5">
-        <div className="col ">
+        <div className="col col-xs-12">
           <div className="logo-wrapper">
             <img src="logo.svg" width="25" height="25" />
             <img src="lendsqr.svg" width="138" height="36" />
@@ -58,11 +58,11 @@ function Login() {
             />
           </div>
         </div>
-        <div className="col login-wrapper">
+        <div className="col col-xs-12   login-wrapper">
           <h2>Welcome!</h2>
           <p>Enter details to login.</p>
           <form className="form" onSubmit={handleSubmit}>
-            <div className="form-group email-input">
+            <div className="form-group">
               <input
                 type="email"
                 value="admin@example.com"

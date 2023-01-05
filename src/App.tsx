@@ -1,12 +1,12 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.scss';
-import Login from "./LoginPage/login";
+import Login from "./LoginPage";
 import { BrowserRouter as Router, Routes, Route,Outlet } from "react-router-dom";
-import Dashboard from './Dashboard/dashboard';
-import Users from './Users/users';
-import Guarantors from './Guarantors/guarantors';
-import UserDetails from './UserDetails/userDetails';
+import Dashboard from './Dashboard';
+import Users from './Users';
+import Guarantors from './Guarantors';
+import UserDetails from './UserDetails';
 
 
 function App() {
