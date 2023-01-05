@@ -46,8 +46,8 @@ function Login() {
       <div className="row gx-5">
         <div className="col col-xs-12">
           <div className="logo-wrapper">
-            <img src="logo.svg" width="25" height="25" />
-            <img src="lendsqr.svg" width="138" height="36" />
+            <img src="/icons/logo.svg" width="25" height="25" />
+            <img src="/icons/lendsqr.svg" width="138" height="36" />
           </div>
           <div className="pablo-img">
             <img

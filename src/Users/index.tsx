@@ -21,7 +21,14 @@ interface DataType {
     phoneNumber: string;
     createdAt: string;
     status: string;
+    id: string;
   };
+
+  const fetchUser =() =>{
+    alert("user fetched")
+
+  }
+
   const items: MenuProps['items'] = [
     {
       key: '1',
@@ -151,35 +158,7 @@ interface DataType {
   ];
   
   
-  const datas: DataType[] = [
-    {
-      key: '1',
-      orgName: 'Lendsqr',
-      userName: "Wilburn.Rice",
-      email: 'New York No. 1 Lake Park',
-      phoneNumber: "494-278-0946",
-      createdAt: "2072-12-27T03:44:22.522Z",
-      status: 'blacklisted'
-    },
-    {
-      key: '2',
-      orgName: 'Irorun',
-      userName: "Jaycee15",
-      email: 'London No. 1 Lake Park',
-      phoneNumber: "494-278-0946",
-      createdAt: "2072-12-27T03:44:22.522Z",
-      status: 'inactive',
-    },
-    {
-      key: '3',
-      orgName: 'Lendsqr',
-      userName: "Haylee19",
-      email: 'Sidney No. 1 Lake Park',
-      phoneNumber: "494-278-0946",
-      createdAt: "2072-12-27T03:44:22.522Z",
-      status: 'pending',
-    },
-  ];
+ 
   
   
   const columns: ColumnsType<DataType> = [
@@ -302,6 +281,7 @@ interface DataType {
     {
       title: "",
       key: "action",
+      dataIndex: "id",
      
       render: (_, record) => (
         <Space size="middle">
@@ -321,13 +301,14 @@ interface DataType {
               className="sub-sidenav-text "
               href="/dashboard/users/userDetails"
               
+              
             >
               View Details
             </a>
           </div>
           
   
-          <div className="sub-side-nav-links   ">
+          <div className="sub-side-nav-links  ">
             <img
               className="icon"
               src="/icons/black-list.svg"
@@ -399,7 +380,8 @@ function Users() {
       
 
     }, []);
- 
+
+   
 
    
     

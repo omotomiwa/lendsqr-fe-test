@@ -11,8 +11,8 @@ function Navbar() {
         <div className="nav-items">
             <div className="nav-item-left">
             <div className="logo-wrapper">
-            <img src="logo.svg" width="25" height="25" />
-            <img src="lendsqr.svg" width="138" height="36" />
+            <img src="/icons/logo.svg" width="25" height="25" />
+            <img src="/icons/lendsqr.svg" width="138" height="36" />
           </div>
           <div className="input-group">
     <input type="text" className="form-control " placeholder="Search for anything"/>
