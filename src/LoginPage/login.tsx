@@ -42,8 +42,8 @@ function Login() {
     //     alert("Goes to registration page");
     //   };
   return (
-    <div className="container wrapper">
-      <div className="row">
+    <div className="  wrapper">
+      <div className="row gx-5">
         <div className="col ">
           <div className="logo-wrapper">
             <img src="logo.svg" width="25" height="25" />
@@ -62,7 +62,7 @@ function Login() {
           <h2>Welcome!</h2>
           <p>Enter details to login.</p>
           <form className="form" onSubmit={handleSubmit}>
-            <div className="form-group">
+            <div className="form-group email-input">
               <input
                 type="email"
                 value="admin@example.com"
@@ -70,6 +70,7 @@ function Login() {
                 id="email"
                 placeholder="Email"
               />
+              
               <br />
 
               <div className="input-group password">
