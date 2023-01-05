@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import {BrowserRouter as Router} from "react-router-dom" 
+//import {BrowserRouter as Router} from "react-router-dom" 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
