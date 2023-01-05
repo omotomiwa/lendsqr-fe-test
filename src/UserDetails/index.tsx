@@ -83,56 +83,60 @@ function UserDetails() {
         children: <div className="tab-one-container">
           <div className="personal-info-container">
             <p className="info-header"> Personal Information</p>
-            <div className="details-container">
+            
+            <div className="details-container ">
              
-                <div className="details-heading-container">
-                  <div className="head">
-                    <p className="sub-head">FULL NAME</p>
-                    <p className="sub-head-details">Grace Effiom</p>
-                  </div>
-                  <div className="head">
-                    <p className="sub-head">MARITAL STATUS</p>
-                    <p className="sub-head-details">Single</p>
-                  </div>
-                </div>
-             
-                <div className="details-heading-container">
-                  <div className="head">
-                    <p className="sub-head">PHONE NUMBER</p>
-                    <p className="sub-head-details">07060780922</p>
-                  </div>
-                  <div className="head">
-                    <p className="sub-head">CHILDREN</p>
-                    <p className="sub-head-details">None</p>
-                  </div>
-                </div>
-                <div className="details-heading-container">
-                  <div className="head">
-                    <p className="sub-head">EMAIL ADDRESS</p>
-                    <p className="sub-head-details">grace@gmail.com</p>
-                  </div>
-                  <div className="head">
-                    <p className="sub-head">TYPE OF RESIDENCE</p>
-                    <p className="sub-head-details"> Parent`s Apartment</p>
-                  </div>
-                </div>
-                <div className="details-heading-container">
-                  <div className="head">
-                    <p className="sub-head">BVN</p>
-                    <p className="sub-head-details">08175752205</p>
-                  </div>
-                 
-                </div>
-                <div className="details-heading-container">
-                  <div className="head">
-                    <p className="sub-head">GENDER</p>
-                    <p className="sub-head-details">Female</p>
-                  </div>
-                 
-                </div>
+             <div className="details-heading-container  ">
                
-            </div>
-            <Divider />
+               <div className="head">
+                 <p className="sub-head">FULL NAME</p>
+                 <p className="sub-head-details">Grace Effiom</p>
+               </div>
+               <div className="head">
+                 <p className="sub-head">MARITAL STATUS</p>
+                 <p className="sub-head-details">Single</p>
+               </div>
+             </div>
+          
+             <div className="details-heading-container   ">
+               <div className="head">
+                 <p className="sub-head">PHONE NUMBER</p>
+                 <p className="sub-head-details">07060780922</p>
+               </div>
+               <div className="head">
+                 <p className="sub-head">CHILDREN</p>
+                 <p className="sub-head-details">None</p>
+               </div>
+             </div>
+             <div className="details-heading-container  ">
+               <div className="head">
+                 <p className="sub-head">EMAIL ADDRESS</p>
+                 <p className="sub-head-details">grace@gmail.com</p>
+               </div>
+               <div className="head">
+                 <p className="sub-head">TYPE OF RESIDENCE</p>
+                 <p className="sub-head-details"> Parent`s Apartment</p>
+               </div>
+             </div>
+             <div className="details-heading-container  ">
+               <div className="head">
+                 <p className="sub-head">BVN</p>
+                 <p className="sub-head-details">08175752205</p>
+               </div>
+              
+             </div>
+             <div className="details-heading-container  ">
+               <div className="head">
+                 <p className="sub-head">GENDER</p>
+                 <p className="sub-head-details">Female</p>
+               </div>
+              
+             </div>
+            
+         </div>
+         <Divider />
+            
+         
             
             
           </div>

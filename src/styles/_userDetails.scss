@@ -152,12 +152,16 @@
     padding-top: 15px;
 
 }
+
+
 .details-container{
     display: flex;
     flex-direction: row;
-    grid-gap: 70px;
+    justify-content: space-between;
+    
     
 }
+
 .head{
     padding-bottom: 20px;
 }
