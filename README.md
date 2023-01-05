@@ -1,6 +1,6 @@
                                  LENDSQR ADMIN DASHBOARD
 
-This is a React project which consist of an authentication page and a dashboard screen, clients data was populated with api from the backend. On logging in, one can view the data for the Users by clicking the Users link on the side navigation. The users view displays information about all the users with different their status. onclick of the view more icon at the far right on each user, more information can be retrieved on that user.
+This is a React project which consist of an authentication page and a dashboard screen, clients data was populated with api from the backend. On logging in, one can view the data for the Users by clicking the Users link on the side navigation. The users view displays information about all the users with their different status. Onclick of the view more icon at the far right on each user, more information can be retrieved on that user.
 
 This is a project built with React and TypeScript, it was styled using SASS, Bootsrap and Ant Design. Routing was handled using react router dom.
 
