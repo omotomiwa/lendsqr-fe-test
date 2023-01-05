@@ -308,7 +308,7 @@ interface DataType {
             <div className="dropdown">
             <img className="icon" src="/icons/more.svg" width="20" height="20" />
   <div className="dropdown-content">
-          <Link className="icon-link" to="userDetails">
+         
           <div className="sub-side-nav-links   ">
          
             <img
@@ -319,13 +319,13 @@ interface DataType {
             />
             <a
               className="sub-sidenav-text "
-              href="#"
+              href="/dashboard/users/userDetails"
               
             >
               View Details
             </a>
           </div>
-          </Link>
+          
   
           <div className="sub-side-nav-links   ">
             <img

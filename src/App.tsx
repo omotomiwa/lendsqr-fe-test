@@ -22,10 +22,10 @@ function App() {
      
           
         >
-          <Route path="users"  element={<Users />}/> 
+          <Route path="users"  element={<Users />}><Route path="userDetails"  element={<UserDetails />}/></Route> 
           
           <Route path="guarantors"  element={<Guarantors />}/>
-          <Route path="userDetails"  element={<UserDetails />}/>
+          
          
         
           

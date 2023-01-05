@@ -79,7 +79,7 @@ function SideNav() {
        
        
 
-        <Link to="userDetails"  className="links">
+        <Link to="guarantors"  className="links">
         <li className="sidenav-link">
             
             <div className="sub-side-nav-links   ">

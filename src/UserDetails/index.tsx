@@ -21,7 +21,7 @@ function UserDetails() {
             />
             <a
               className="back "
-              href="#"
+              href="/dashboard/users"
               
             >
               Back to Users
@@ -158,7 +158,7 @@ function UserDetails() {
                   </div>
                   <div className="head">
                     <p className="sub-head">MONTHLY INCOME</p>
-                    <p className="sub-head-details">₦200,000.00- ₦400,000.00</p>
+                    <p className="sub-head-details">₦200,000.00</p>
                   </div>
                 </div>
                 <div className="details-heading-container">
